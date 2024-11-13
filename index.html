@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motifs de Broderie Gratuits</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .youtube-section {
+            background-color: #ffe6e6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="email"], 
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input[type="email"]:focus, 
+        input[type="text"]:focus {
+            border-color: #FF0000;
+            outline: none;
+        }
+
+        .submit-btn {
+            background-color: #FF0000;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #cc0000;
+        }
+
+        .checkbox-group {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border-radius: 4px;
+        }
+
+        .youtube-link {
+            color: #FF0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .youtube-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="youtube-section">
+            <h2>📥 Téléchargez vos motifs gratuits</h2>
+            <p>Pour recevoir votre motif gratuit :</p>
+            <ol>
+                <li>Abonnez-vous à ma chaîne YouTube en cliquant 
+                    <a href="https://www.youtube.com/@myriamnumerisationbroderie6995" target="_blank" class="youtube-link">ici</a>
+                </li>
+                <li>Remplissez le formulaire ci-dessous</li>
+                <li>Je vous enverrai personnellement le motif par email</li>
+            </ol>
+        </div>
+
+        <form action="https://formspree.io/f/xanyjpwl" method="POST">
+            <div class="form-group">
+                <label>Votre nom YouTube :</label>
+                <input type="text" name="nom-youtube" required 
+                       placeholder="Le nom utilisé pour votre abonnement YouTube">
+            </div>
+
+            <div class="form-group">
+                <label>Votre email :</label>
+                <input type="email" name="email" required 
+                       placeholder="Votre adresse email pour recevoir le motif">
+            </div>
+
+            <div class="checkbox-group">
+                <label>
+                    <input type="checkbox" required>
+                    Je confirme être abonné(e) à la chaîne YouTube
+                </label>
+            </div>
+
+            <button type="submit" class="submit-btn">Demander mon motif gratuit</button>
+        </form>
+    </div>
+</body>
+</html>
+
